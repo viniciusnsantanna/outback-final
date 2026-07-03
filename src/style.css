@@ -1,0 +1,225 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+body { background-color: #ffffff; }
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 4px solid #990000;
+    padding: 10px 40px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1400px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between; gap: 30px;
+}
+.logo img { height: 45px; display: block; }
+.search-bar {
+    display: flex; align-items: center; border: 1px solid #e0e0e0; border-radius: 20px;
+    padding: 6px 18px; background-color: #f5f5f5; flex-grow: 1; max-width: 280px;
+}
+.search-bar input { border: none; background: none; outline: none; width: 100%; font-size: 13px; }
+.search-bar button { border: none; background: none; cursor: pointer; color: #990000; }
+.nav-menu { display: flex; align-items: center; gap: 20px; }
+.nav-menu a { text-decoration: none; color: #333333; font-size: 11px; font-weight: bold; letter-spacing: 0.5px; transition: color 0.2s; }
+.nav-menu a:hover { color: #990000; }
+.nav-menu .btn-profile { color: #990000; }
+
+.banner-section {
+    width: 100%;
+    margin-top: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.carousel-track img {
+  min-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.momento-outback {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.divider {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.momento-outback h2 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 160px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.item p {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #990000;
+  font-size: 14px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.title-container h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.hashtag-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+.promocoes-section {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.multi-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.multi-carousel-track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.multi-carousel-item {
+  flex: 0 0 calc((100% - 48px) / 3);
+}
+
+.multi-carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: #b0b0b0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.dot:hover {
+  transform: scale(1.15);
+}
+
+.dot.active {
+  background-color: #990000;
+}
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.footer-pattern {
+  width: 100%;
+  height: 40px;
+  background-image: url('./Detalhe2.jpg');
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+.footer-bar {
+  background-color: #990000;
+  padding: 25px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-alert {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.footer-law {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
